@@ -1,0 +1,12 @@
+.sprite {
+  margin: 56px auto;
+}
+
+.card--media {
+  //height: 342px;
+  width: 260px;
+  > img {
+    //height: 211px;
+    max-width: 250px;
+  }
+}

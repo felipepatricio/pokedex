@@ -1,0 +1,11 @@
+<div bp="grid 12">
+	<app-form-search (formChange)="search($event)"></app-form-search>
+</div>
+
+<div bp="12 3@md 2@lg 1@sm">
+	<a *ngFor="let p of pokemon | async" [routerLink]="['./', p.id]" class="card--media">
+		<img alt={{p.name}} src={{p.imageUrl}} [class]="' sprite sprite-' + p.id" />
+	</a>
+</div>
+
+<router-outlet></router-outlet>
